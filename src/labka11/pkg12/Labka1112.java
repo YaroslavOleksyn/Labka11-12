@@ -31,7 +31,7 @@ public class Labka1112 {
 
             if (scanner.hasNextInt()) {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Очистка буфера
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
