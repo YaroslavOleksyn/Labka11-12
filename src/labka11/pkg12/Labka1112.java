@@ -77,7 +77,7 @@ public class Labka1112 {
         scanner.nextLine();
         for (int i = 0; i < numProfessions; i++) {
             String professionName;
-            boolean isValidProfession = false;
+            boolean iftrue = false;
             do {
                 System.out.println("Введіть професію працівника:");
                 professionName = scanner.nextLine().toLowerCase();
@@ -85,25 +85,25 @@ public class Labka1112 {
                 switch (professionName) {
                     case "programmer":
                         employee.addProfession(new Programmer());
-                        isValidProfession = true;
+                        iftrue = true;
                         break;
                     case "database administrator":
                         employee.addProfession(new DatabaseAdministrator());
-                        isValidProfession = true;
+                        iftrue = true;
                         break;
                     case "engineer":
                         employee.addProfession(new Engineer());
-                        isValidProfession = true;
+                        iftrue = true;
                         break;
                     case "computer scientist":
                         employee.addProfession(new Informatician());
-                        isValidProfession = true;
+                        iftrue = true;
                         break;
                     default:
                         System.out.println("Такої професії не існує.");
                         break;
                 }
-            } while (!isValidProfession);
+            } while (!iftrue);
         }
 
         String positionName;
